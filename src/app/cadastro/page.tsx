@@ -14,15 +14,21 @@ export default function loginScreen(){
                 <Text style={styles.campo}>E-mail</Text>
                 <TextInput placeholder="Digite seu e-mail"></TextInput>
             </View>
-            
+            <View style={styles.containerBox}>
+                <Text style={styles.campo}>CPF</Text>
+                <TextInput placeholder="Digite seu CPF"></TextInput>
+            </View>
             <View style={styles.containerBox} >
                 <Text style={styles.campo}>Senha</Text>
                 <TextInput placeholder="Digite sua senha" secureTextEntry></TextInput>
             </View>
-            
+            <View style={styles.containerBox}>
+                <Text style={styles.campo}>Data de Nacimento</Text>
+                <TextInput placeholder="DD/MM/AA"></TextInput>
+            </View>
             <Link href={"/home/page"} asChild>
             <TouchableOpacity>
-                <Text style={styles.enviar}>Login</Text>
+                <Text style={styles.enviar}>Cadastre-se</Text>
             </TouchableOpacity>
            
             </Link>
